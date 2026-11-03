@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Importance of Empathy in Building a Culture of Peace</title>
+<meta name="description" content="Digital companion to a school article on empathy and a culture of peace. Bilingual: English / Español.">
+<style>
+/* ===== Palette and base ===== */
+:root{--navy:#0b2545;--pet:#13687a;--tur:#2bb3b1;--cream:#fdf6e8;--warm:#e07b1f;--ink:#1e2a38;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:17px/1.65 "Segoe UI",Calibri,Arial,sans-serif;color:var(--ink);background:var(--white)}
+h1,h2,h3{font-family:Georgia,Cambria,serif;line-height:1.2;color:var(--navy);margin:0 0 .6em}
+h2{font-size:clamp(1.6rem,4vw,2.2rem)}
+a{color:var(--pet)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+section:nth-of-type(even){background:var(--cream)}
+.kicker{color:var(--warm);font-weight:700;letter-spacing:.12em;font-size:.8rem;text-transform:uppercase;margin-bottom:6px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:#fff;border:1px solid #d7e6e4;border-top:4px solid var(--tur);border-radius:12px;padding:20px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(11,37,69,.1)}
+.card h3{font-size:1.1rem}
+.note{background:#fff;border-left:5px solid var(--warm);padding:12px 16px;border-radius:0 8px 8px 0;margin:18px 0;font-size:.95rem}
+/* ===== Navigation ===== */
+header.top{position:sticky;top:0;z-index:10;background:var(--navy)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:56px}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:#dff5f3;text-decoration:none;padding:6px 10px;border-radius:6px;font-size:.88rem}
+nav a:hover,nav a:focus{background:var(--pet);color:#fff}
+#menuBtn{display:none}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--warm);color:#fff;border:0;padding:12px 26px;border-radius:30px;font-weight:700;text-decoration:none;display:inline-block;transition:transform .2s}
+.btn:hover{transform:scale(1.04)}
+#lang{background:transparent;color:#fff;border:2px solid var(--tur);border-radius:20px;padding:5px 14px;font-weight:700}
+#lang:hover{background:var(--tur);color:var(--navy)}
+#menuBtn{background:none;border:2px solid var(--tur);color:#fff;border-radius:8px;padding:4px 10px}
+/* ===== Hero ===== */
+.hero{background:linear-gradient(160deg,var(--navy),var(--pet));color:#fff;padding:80px 0 60px;text-align:center}
+.hero h1{color:#fff;font-size:clamp(1.9rem,6vw,3.4rem);max-width:860px;margin:0 auto .4em}
+.hero p.sub{font-size:1.2rem;color:#cdeeea;max-width:640px;margin:0 auto 24px}
+.quote{font-family:Georgia,serif;font-style:italic;max-width:620px;margin:30px auto;padding:16px 20px;border-left:4px solid var(--warm);text-align:left;background:rgba(255,255,255,.08);border-radius:0 10px 10px 0}
+.hero svg{max-width:560px;width:100%;height:auto;margin-top:24px}
+/* ===== Statistics ===== */
+.stat{background:#fff;border:1px solid #d7e6e4;border-radius:12px;padding:18px 20px;margin-bottom:16px}
+.stat h3{margin-bottom:2px;font-size:1.05rem}
+.stat small{color:#4a5a6a;display:block;margin-bottom:8px}
+.row{display:flex;align-items:center;gap:10px;margin:6px 0;font-size:.92rem}
+.row b{min-width:3.6em}
+.track{flex:1;height:16px;background:#e3efee;border-radius:8px;overflow:hidden}
+.fill{height:100%;width:0;background:linear-gradient(90deg,var(--pet),var(--tur));transition:width 1.1s ease}
+.row span.l{flex:0 0 38%;max-width:260px}
+/* ===== Quiz ===== */
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border:2px solid #cfe1df;background:#fff;border-radius:10px;color:var(--ink)}
+.opt:hover:not([disabled]){border-color:var(--tur)}
+.opt.best{border-color:#1b8a5a;background:#e8f7ef}
+.opt.pick:not(.best){border-color:var(--warm);background:#fff3e6}
+.fb{margin-top:10px;padding:12px 14px;background:var(--cream);border-radius:8px;display:none}
+ul.clean{padding-left:20px}
+dl{margin:0}dt{font-weight:700;color:var(--pet)}dd{margin:0 0 12px}
+.team .card{text-align:center;font-weight:600}
+footer{background:var(--navy);color:#cdeeea;text-align:center;padding:28px 20px;font-size:.92rem}
+.refs li{margin-bottom:10px;overflow-wrap:anywhere}
+.sr{position:absolute;left:-9999px}
+@media(max-width:820px){
+ #menuBtn{display:block}
+ nav{display:none;position:absolute;top:56px;left:0;right:0;background:var(--navy);padding:10px 20px;flex-direction:column}
+ nav.open{display:flex}
+ .row{flex-wrap:wrap}.row span.l{flex:1 0 100%;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<header class="top"><div class="wrap bar">
+ <button id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+ <nav id="nav" aria-label="Main">
+  <a href="#understand" data-t="n1"></a><a href="#why" data-t="n2"></a><a href="#peace" data-t="n3"></a><a href="#mexico" data-t="n4"></a><a href="#practice" data-t="n5"></a><a href="#challenge" data-t="n6"></a><a href="#glossary" data-t="n7"></a><a href="#about" data-t="n8"></a>
+ </nav>
+ <button id="lang" aria-label="Change language">ESPAÑOL</button>
+</div></header>
+
+<main id="main">
+<!-- 1. COVER -->
+<div class="hero"><div class="wrap">
+ <p class="kicker" data-t="kick"></p>
+ <h1>THE IMPORTANCE OF EMPATHY IN BUILDING A CULTURE OF PEACE</h1>
+ <p class="sub" data-t="sub"></p>
+ <a class="btn" href="#understand" data-t="explore"></a>
+ <blockquote class="quote" data-t="quote"></blockquote>
+ <!-- Illustration: people connected by speech bubbles and a heart -->
+ <svg viewBox="0 0 560 170" role="img" aria-label="Illustration of five diverse people connected by dialogue">
+  <rect x="150" y="6" width="90" height="38" rx="14" fill="#fdf6e8"/><path d="M185 44l8 14 8-14z" fill="#fdf6e8"/>
+  <path d="M195 18c-6-9-18 1-9 10l9 9 9-9c9-9-3-19-9-10z" fill="#e07b1f"/>
+  <rect x="320" y="10" width="90" height="34" rx="14" fill="#2bb3b1"/><circle cx="350" cy="27" r="4" fill="#0b2545"/><circle cx="365" cy="27" r="4" fill="#0b2545"/><circle cx="380" cy="27" r="4" fill="#0b2545"/>
+  <g stroke="#f4cfa8" stroke-width="7" stroke-linecap="round"><path d="M110 120h70M200 120h70M290 120h70M380 120h60"/></g>
+  <g><rect x="70" y="85" width="50" height="85" rx="22" fill="#2bb3b1"/><circle cx="95" cy="68" r="19" fill="#f4cfa8"/>
+  <rect x="160" y="85" width="50" height="85" rx="22" fill="#f2994a"/><circle cx="185" cy="68" r="19" fill="#c6865c"/>
+  <rect x="250" y="85" width="50" height="85" rx="22" fill="#1f3a5f"/><circle cx="275" cy="68" r="19" fill="#8d5c3e"/>
+  <rect x="340" y="85" width="50" height="85" rx="22" fill="#5ec4be"/><circle cx="365" cy="68" r="19" fill="#e8b48c"/>
+  <rect x="430" y="85" width="50" height="85" rx="22" fill="#d65c5c"/><circle cx="455" cy="68" r="19" fill="#6e4630"/></g>
+ </svg>
+</div></div>
+
+<!-- 2. UNDERSTANDING EMPATHY -->
+<section id="understand"><div class="wrap">
+ <p class="kicker">01</p><h2 data-t="u_h"></h2><p data-t="u_p"></p>
+ <div class="grid" id="types"></div>
+ <p class="note" data-t="u_note"></p>
+ <h3 data-t="d_h"></h3><div class="grid" id="diff"></div>
+</div></section>
+
+<!-- 3. WHY IT MATTERS -->
+<section id="why"><div class="wrap">
+ <p class="kicker">02</p><h2 data-t="w_h"></h2><p data-t="w_p"></p>
+ <div class="grid" id="dims"></div>
+ <h3 style="margin-top:28px" data-t="s_h"></h3><div class="grid" id="sits"></div>
+</div></section>
+
+<!-- 4. CULTURE OF PEACE -->
+<section id="peace"><div class="wrap">
+ <p class="kicker">03</p><h2 data-t="c_h"></h2><p data-t="c_p"></p>
+ <div class="grid" id="pillars"></div>
+ <p class="note" data-t="c_note"></p>
+</div></section>
+
+<!-- 5. MEXICAN CONTEXT -->
+<section id="mexico"><div class="wrap">
+ <p class="kicker">04</p><h2 data-t="m_h"></h2><p data-t="m_p"></p>
+ <p class="note" data-t="m_warn"></p>
+ <div id="stats"></div>
+</div></section>
+
+<!-- 6. PRACTICE -->
+<section id="practice"><div class="wrap">
+ <p class="kicker">05</p><h2 data-t="p_h"></h2><p data-t="p_p"></p>
+ <div class="grid" id="tips"></div>
+</div></section>
+
+<!-- 7. INTERACTIVE ACTIVITY -->
+<section id="challenge"><div class="wrap">
+ <p class="kicker">06</p><h2 data-t="a_h"></h2><p data-t="a_p"></p>
+ <div id="quiz" aria-live="polite"></div>
+</div></section>
+
+<!-- 8. GLOSSARY -->
+<section id="glossary"><div class="wrap">
+ <p class="kicker">07</p><h2 data-t="g_h"></h2><div class="grid" id="gloss"></div>
+</div></section>
+
+<!-- 9. ABOUT -->
+<section id="about"><div class="wrap">
+ <p class="kicker">08</p><h2 data-t="ab_h"></h2>
+ <h3>THE IMPORTANCE OF EMPATHY IN BUILDING A CULTURE OF PEACE</h3>
+ <p data-t="ab_p"></p>
+ <h3 data-t="team_h"></h3>
+ <div class="grid team" id="team"></div>
+ <p style="margin-top:18px"><b data-t="grade"></b> · <b data-t="shift"></b></p>
+</div></section>
+
+<!-- 10. REFERENCES -->
+<section id="refs"><div class="wrap">
+ <p class="kicker">09</p><h2 data-t="r_h"></h2><p data-t="r_p"></p>
+ <ol class="refs" id="reflist"></ol>
+</div></section>
+</main>
+<footer><strong>THE IMPORTANCE OF EMPATHY IN BUILDING A CULTURE OF PEACE</strong><br><span data-t="foot"></span></footer>
+
+<script>
+/* ===== Content: every string is [English, Español] ===== */
+const T={
+n1:["Empathy","Empatía"],n2:["Why it matters","Por qué importa"],n3:["Culture of peace","Cultura de paz"],n4:["Mexico","México"],n5:["Practice","Practicar"],n6:["Challenge","Reto"],n7:["Glossary","Glosario"],n8:["About","Proyecto"],
+kick:["Digital companion to our school article","Complemento digital de nuestro artículo escolar"],
+sub:["Understanding others is the first step toward a more peaceful world.","Comprender a los demás es el primer paso hacia un mundo más pacífico."],
+explore:["Explore the content","Explorar el contenido"],
+quote:["“Peace begins when we learn to see the world through someone else’s eyes.”","“La paz comienza cuando aprendemos a ver el mundo a través de los ojos de otra persona.”"],
+u_h:["Understanding empathy","Comprender la empatía"],
+u_p:["Empathy is the ability to recognize and understand what another person thinks and feels, and to see a situation from his or her point of view. Researchers often describe it in three ways. These are useful ideas, not medical labels, and people do not all experience empathy in the same way.","La empatía es la capacidad de reconocer y comprender lo que otra persona piensa y siente, y de ver una situación desde su punto de vista. Suele describirse de tres maneras. Son ideas útiles, no diagnósticos, y las personas no experimentan la empatía de la misma forma."],
+u_note:["Understanding someone does not mean agreeing with them. We can understand why a friend is angry and still disagree with how he reacts.","Comprender a alguien no significa estar de acuerdo con esa persona. Podemos entender por qué un amigo está enojado y aun así no estar de acuerdo con su reacción."],
+d_h:["Empathy, sympathy and compassion","Empatía, simpatía y compasión"],
+w_h:["Why does empathy matter?","¿Por qué importa la empatía?"],
+w_p:["Listening, respecting and understanding different perspectives helps to prevent conflicts and improve coexistence in four areas of life.","Escuchar, respetar y comprender perspectivas diferentes ayuda a prevenir conflictos y a mejorar la convivencia en cuatro áreas de la vida."],
+s_h:["Four school situations: an empathetic response","Cuatro situaciones escolares: una respuesta empática"],
+c_h:["Empathy and the culture of peace","Empatía y cultura de paz"],
+c_p:["A culture of peace is not just avoiding fights or living without disagreements. UNESCO explains that peace also includes dialogue, solidarity, cooperation and respect for human rights. A peaceful society does not need everyone to think the same; it needs people who can live together while respecting their differences.","Una cultura de paz no es simplemente evitar peleas o vivir sin desacuerdos. La UNESCO explica que la paz también incluye diálogo, solidaridad, cooperación y respeto a los derechos humanos. Una sociedad pacífica no necesita que todos piensen igual; necesita personas que puedan convivir respetando sus diferencias."],
+c_note:["Empathy is a key tool, but it works best together with education, justice, cooperation and collective responsibility.","La empatía es una herramienta clave, pero funciona mejor junto con educación, justicia, cooperación y responsabilidad colectiva."],
+m_h:["The Mexican context","El contexto mexicano"],
+m_p:["These official figures show where respect and coexistence face difficulties. Each one names its survey, year and population.","Estas cifras oficiales muestran dónde la convivencia y el respeto enfrentan dificultades. Cada una indica su encuesta, año y población."],
+m_warn:["Important: these surveys do not measure empathy directly. Linking them to empathy is an interpretation. The percentages do not describe all Mexicans, only the groups studied.","Importante: estas encuestas no miden la empatía directamente. Relacionarlas con la empatía es una interpretación. Los porcentajes no describen a todos los mexicanos, solo a los grupos estudiados."],
+p_h:["How can we practice empathy?","¿Cómo podemos practicar la empatía?"],
+p_p:["Small habits make a big difference. Here are seven, with examples.","Los hábitos pequeños hacen una gran diferencia. Aquí hay siete, con ejemplos."],
+a_h:["A small action, a big difference","Una pequeña acción, una gran diferencia"],
+a_p:["Read each situation and choose what you would do. This is not an exam: it is a chance to reflect.","Lee cada situación y elige qué harías. No es un examen: es una oportunidad para reflexionar."],
+g_h:["Glossary","Glosario"],
+ab_h:["About the project","Sobre el proyecto"],
+ab_p:["This is an academic project that reflects on empathy, coexistence, the prevention of violence and the construction of a culture of peace. It extends our printed article and is based on the institutional sources listed below.","Este es un proyecto académico que reflexiona sobre la empatía, la convivencia, la prevención de la violencia y la construcción de una cultura de paz. Amplía nuestro artículo impreso y se basa en las fuentes institucionales que aparecen abajo."],
+team_h:["Team","Equipo"],grade:["Grade and group: Tercero 1","Grado y grupo: Tercero 1"],shift:["Shift: Morning (Matutino)","Turno: Matutino"],
+r_h:["References","Referencias"],r_p:["Institutional sources used in this project (APA 7).","Fuentes institucionales usadas en este proyecto (APA 7)."],
+foot:["Academic project · PAEC 3rd grade · Tercero 1, morning shift","Proyecto académico · PAEC 3.º · Tercero 1, turno matutino"],
+more:["Source","Fuente"],pop:["Population","Población"]
+};
+/* three kinds of empathy */
+const TYPES=[
+["Cognitive empathy","Empatía cognitiva","Understanding another person’s thoughts and perspective. Example: you do not like a classmate’s idea, but you understand why it matters to him.","Comprender los pensamientos y la perspectiva de otra persona. Ejemplo: no te gusta la idea de un compañero, pero entiendes por qué es importante para él."],
+["Emotional empathy","Empatía emocional","Recognizing and connecting with what others feel. Example: you notice a friend’s sadness in her voice and feel concerned.","Reconocer y conectar con lo que sienten los demás. Ejemplo: notas la tristeza de una amiga en su voz y te preocupas."],
+["Compassionate empathy","Empatía compasiva","Understanding a situation and being ready to help. Example: you see that a new student is lost and offer to show her the school.","Comprender una situación y estar dispuesto a ayudar. Ejemplo: ves que una alumna nueva está perdida y le ofreces mostrarle la escuela."]];
+const DIFF=[
+["Empathy","Empatía","“I understand how you feel.” A classmate fails an exam; you try to imagine his worry.","“Entiendo cómo te sientes.” Un compañero reprueba un examen; intentas imaginar su preocupación."],
+["Sympathy","Simpatía","“I feel sorry for you.” You express pity, but from a distance.","“Lamento lo que te pasa.” Expresas lástima, pero desde la distancia."],
+["Compassion","Compasión","“I understand, and I want to help.” You offer to study together.","“Te entiendo y quiero ayudarte.” Te ofreces a estudiar con él."]];
+const DIMS=[
+["Personal relationships","Relaciones personales","Listening without judging builds trust with family and friends.","Escuchar sin juzgar construye confianza con la familia y los amigos."],
+["School environment","Ambiente escolar","Empathy reduces exclusion and bullying and makes it easier to ask for help.","La empatía reduce la exclusión y el acoso escolar y facilita pedir ayuda."],
+["Digital communication","Comunicación digital","A screen can make us forget that a real person reads our words.","Una pantalla puede hacernos olvidar que una persona real lee nuestras palabras."],
+["Society and community","Sociedad y comunidad","Understanding others supports cooperation, solidarity and respect for rights.","Comprender a los demás favorece la cooperación, la solidaridad y el respeto a los derechos."]];
+const SITS=[
+["A student is excluded from an activity","Un estudiante es excluido de una actividad","Invite him to join, ask what he would like to do, and make room in the group.","Invítalo a participar, pregúntale qué le gustaría hacer y hazle espacio en el grupo."],
+["A person receives teasing","Una persona recibe burlas","Do not laugh. Say that it is not funny, check on the person afterward and tell a teacher if it continues.","No te rías. Di que no es gracioso, pregunta después cómo está la persona y avisa a un docente si continúa."],
+["Two classmates disagree","Dos compañeros están en desacuerdo","Let each person speak without interruptions, repeat what you heard and look for a shared solution.","Deja que cada uno hable sin interrupciones, repite lo que escuchaste y busquen una solución compartida."],
+["An offensive comment appears on social media","Aparece un comentario ofensivo en redes sociales","Do not join in. Report it, support the person privately and think before you reply.","No te sumes. Repórtalo, apoya en privado a la persona y piensa antes de responder."]];
+const PILLARS=[["Human rights","Derechos humanos"],["Equality and dignity","Igualdad y dignidad"],["Dialogue","Diálogo"],["Solidarity","Solidaridad"],["Cooperation","Cooperación"],["Peaceful conflict resolution","Resolución pacífica de conflictos"],["Inclusion and participation","Inclusión y participación"]];
+/* statistics: label, percent, year/population, explanation */
+const STATS=[
+{h:["Discrimination — ENADIS 2022 (INEGI)","Discriminación — ENADIS 2022 (INEGI)"],
+ p:["People aged 18+ who said they were discriminated against in the previous 12 months","Personas de 18 años o más que declararon haber sido discriminadas en los 12 meses previos"],
+ r:[["2017",20.2],["2022",23.7],["2022 · women / mujeres",24.5],["2022 · men / hombres",22.8]],
+ n:["Discrimination is unfair treatment because of characteristics such as ethnic origin, disability, age, religion or sexual orientation. Respecting differences protects everyone’s dignity.","La discriminación es un trato injusto por características como origen étnico, discapacidad, edad, religión u orientación sexual. Respetar las diferencias protege la dignidad de todas las personas."],
+ u:"https://www.inegi.org.mx/programas/enadis/2022/"},
+{h:["Cyberbullying — MOCIBA 2024 (INEGI)","Ciberacoso — MOCIBA 2024 (INEGI)"],
+ p:["Internet users aged 12+ who experienced cyberbullying during 2024","Personas usuarias de internet de 12 años o más que vivieron ciberacoso durante 2024"],
+ r:[["Total",21.0],["Women / mujeres",22.2],["Men / hombres",19.6]],
+ n:["Distance can make people forget that comments hurt real people. Empathy must also exist online.","La distancia puede hacer olvidar que los comentarios lastiman a personas reales. La empatía también debe existir en internet."],
+ u:"https://www.inegi.org.mx/programas/mociba/2024/"},
+{h:["Cyberbullying, ages 12–17 — UNICEF México","Ciberacoso de 12 a 17 años — UNICEF México"],
+ p:["Internet users aged 12–17 (about 2.9 million people experienced cyberbullying)","Personas usuarias de internet de 12 a 17 años (unos 2.9 millones vivieron ciberacoso)"],
+ r:[["12–17",23]],
+ n:["Teenagers need safe spaces, trusted adults and kind peers, online and offline.","Las y los adolescentes necesitan espacios seguros, adultos de confianza y compañeros amables, en línea y fuera de línea."],
+ u:"https://www.unicef.org/mexico/proteccion-contra-la-violencia"},
+{h:["Violence against women — ENDIREH 2021 (INEGI)","Violencia contra las mujeres — ENDIREH 2021 (INEGI)"],
+ p:["Women aged 15+. The first bar is lifetime prevalence, not a yearly figure.","Mujeres de 15 años o más. La primera barra es prevalencia a lo largo de la vida, no una cifra anual."],
+ r:[["Any violence / cualquier violencia",70.1],["Psychological / psicológica",51.6],["Sexual",49.7],["Physical / física",34.7],["Economic, property or discrimination / económica, patrimonial o discriminación",27.4]],
+ n:["Do not add these bars: one woman may have experienced several types. Violence also comes from inequality, power and social norms, so empathy must come with prevention, justice and protection.","No sumes estas barras: una misma mujer pudo vivir varios tipos. La violencia también tiene origen en desigualdades, poder y normas sociales, por lo que la empatía debe acompañarse de prevención, justicia y protección."],
+ u:"https://www.inegi.org.mx/programas/endireh/2021/"}];
+const TIPS=[
+["Listen without interrupting","Escuchar sin interrumpir","School: let a classmate finish before you answer. Home: put your phone down at dinner.","Escuela: deja que un compañero termine antes de responder. Casa: deja el celular durante la cena."],
+["Avoid judging others too quickly","Evitar juzgar demasiado rápido","Ask “What happened?” before assuming. A late friend may have a real problem.","Pregunta “¿qué pasó?” antes de suponer. Un amigo que llega tarde puede tener un problema real."],
+["Respect different perspectives","Respetar diferentes perspectivas","In a debate, explain the other opinion fairly before giving yours.","En un debate, explica con justicia la otra opinión antes de dar la tuya."],
+["Think before speaking or posting","Pensar antes de hablar o publicar","Online: ask yourself how you would feel if the post were about you.","En internet: pregúntate cómo te sentirías si la publicación fuera sobre ti."],
+["Help people who experience exclusion","Ayudar a quienes experimentan exclusión","School: invite a classmate who sits alone to join your team.","Escuela: invita a un compañero que está solo a unirse a tu equipo."],
+["Resolve disagreements through dialogue","Resolver desacuerdos mediante el diálogo","Home: talk calmly with a sibling and look for a solution that works for both.","Casa: habla con calma con tu hermano o hermana y busquen una solución para ambos."],
+["Recognize when someone needs support","Reconocer cuándo alguien necesita apoyo","Notice changes in a friend’s mood and offer to listen, or help find a trusted adult.","Nota cambios en el ánimo de un amigo y ofrécete a escucharlo o a buscar a un adulto de confianza."]];
+/* quiz: situation, options [text, isBest], explanation */
+const QUIZ=[
+{s:["A new classmate eats alone every day.","Un compañero nuevo come solo todos los días."],
+ o:[["Invite him to sit with your group.","Invitarlo a sentarse con tu grupo."],["Ignore it; it is not your problem.","Ignorarlo; no es tu problema."],["Make a joke about him with friends.","Hacer una broma sobre él con tus amigos."]],b:0,
+ e:["Inviting him is a small act of inclusion. Feeling included helps a person belong and makes the school more peaceful.","Invitarlo es un pequeño acto de inclusión. Sentirse incluido ayuda a pertenecer y hace la escuela más pacífica."]},
+{s:["A friend sends a mocking photo of a classmate to the group chat.","Un amigo envía a un chat grupal una foto burlona de un compañero."],
+ o:[["Laugh and forward it.","Reírte y reenviarla."],["Say it is not okay, do not share it and check on the classmate.","Decir que no está bien, no compartirla y preguntarle al compañero cómo está."],["Say nothing and leave the chat.","No decir nada y salir del chat."]],b:1,
+ e:["Not sharing protects the classmate’s dignity. Speaking up kindly shows that others can stop this behavior too.","No compartirla protege la dignidad del compañero. Hablar con amabilidad muestra que los demás también pueden frenar esa conducta."]},
+{s:["You disagree with a teammate about a project.","Estás en desacuerdo con un compañero de equipo sobre un proyecto."],
+ o:[["Listen to his reasons, then explain yours.","Escuchar sus razones y luego explicar las tuyas."],["Do the work alone without telling him.","Hacer el trabajo solo sin avisarle."],["Raise your voice until he agrees.","Subir la voz hasta que acepte."]],b:0,
+ e:["Dialogue lets both people feel heard. You can disagree and still respect each other.","El diálogo permite que ambos se sientan escuchados. Se puede no estar de acuerdo y aun así respetarse."]},
+{s:["A friend seems sad and avoids everyone.","Una amiga se ve triste y evita a todos."],
+ o:[["Tell her to stop being dramatic.","Decirle que deje de exagerar."],["Ask privately how she is and listen without judging.","Preguntarle en privado cómo está y escucharla sin juzgar."],["Wait; it will pass.","Esperar; ya se le pasará."]],b:1,
+ e:["A private, gentle question shows care. If she needs more help, you can encourage her to talk to a trusted adult.","Una pregunta privada y amable muestra cuidado. Si necesita más ayuda, puedes animarla a hablar con un adulto de confianza."]},
+{s:["Someone in class has a different opinion from yours and others laugh at him.","Alguien en clase tiene una opinión distinta a la tuya y otros se burlan de él."],
+ o:[["Join the laughter to fit in.","Unirte a las risas para encajar."],["Say that respecting opinions matters, even if you disagree.","Decir que respetar las opiniones importa, aunque no estés de acuerdo."],["Tell him he is wrong in front of everyone.","Decirle frente a todos que está equivocado."]],b:1,
+ e:["Understanding is not agreeing. You can disagree with an idea while protecting the person from humiliation.","Comprender no es estar de acuerdo. Puedes discrepar de una idea y proteger a la persona de la humillación."]}];
+const GLOSS=[
+["Empathy","Empatía","Understanding what another person feels or thinks.","Comprender lo que otra persona siente o piensa."],
+["Compassion","Compasión","Understanding someone’s pain and wanting to help.","Comprender el dolor de alguien y querer ayudar."],
+["Respect","Respeto","Treating people with dignity, including when we disagree.","Tratar a las personas con dignidad, incluso cuando no coincidimos."],
+["Tolerance","Tolerancia","Accepting that others may think or live differently.","Aceptar que otras personas pueden pensar o vivir de manera diferente."],
+["Bullying","Acoso escolar","Repeated aggression or humiliation between students.","Agresión o humillación repetida entre estudiantes."],
+["Discrimination","Discriminación","Unfair treatment of people because of who they are.","Trato injusto hacia las personas por lo que son."],
+["Cooperation","Cooperación","Working together toward a common goal.","Trabajar juntos para lograr un objetivo común."],
+["Awareness","Conciencia","Knowing and noticing a problem or another person’s situation.","Conocer y darse cuenta de un problema o de la situación de otra persona."],
+["Conflict","Conflicto","A disagreement that can be solved peacefully through dialogue.","Un desacuerdo que puede resolverse de forma pacífica mediante el diálogo."],
+["Peaceful","Pacífico","Calm and respectful, without violence.","Tranquilo y respetuoso, sin violencia."]];
+const TEAM=["Álvarez Camarillo, Kevin Elian","Camacho Ampudia, Sebastián Bosco","Castillo Vargas, Rafael Leonardo","Daza Silva, Roberto","Martínez Rojas, Diego","Vega Escandón, Juan Pablo"];
+/* APA 7 references: [prefix, italic title, URL]; years follow the printed article */
+const REFS=[
+["INEGI. (2022). ","Encuesta Nacional sobre la Dinámica de las Relaciones en los Hogares (ENDIREH) 2021","https://www.inegi.org.mx/programas/endireh/2021/"],
+["INEGI. (2023). ","Encuesta Nacional sobre Discriminación (ENADIS) 2022","https://www.inegi.org.mx/programas/enadis/2022/"],
+["INEGI. (2025). ","Módulo sobre Ciberacoso (MOCIBA) 2024","https://www.inegi.org.mx/programas/mociba/2024/"],
+["UNESCO. (2023). ","Recommendation on education for peace and human rights, international understanding, cooperation, fundamental freedoms, global citizenship and sustainable development","https://www.unesco.org/en/legal-affairs/recommendation-education-peace-and-human-rights-international-understanding-cooperation-fundamental"],
+["UNESCO. (2024). ","Mainstreaming social and emotional learning in education systems: Policy guide","https://www.unesco.org/en/articles/mainstreaming-social-and-emotional-learning-education-systems-policy-guide"],
+["UNICEF México. (n.d.). ","Protección contra la violencia","https://www.unicef.org/mexico/proteccion-contra-la-violencia"],
+["UNICEF México. (2019, July 30). ","Erradicar la violencia en el entorno escolar","https://www.unicef.org/mexico/historias/erradicar%20la%20violencia%20en%20el%20entorno%20escolar"]];
+
+/* ===== Rendering ===== */
+let L=0; // 0 = English, 1 = Spanish
+try{L=localStorage.getItem("lang")==="es"?1:0}catch(e){}
+const $=id=>document.getElementById(id);
+const card=(h,p)=>`<article class="card"><h3>${h}</h3><p>${p}</p></article>`;
+let answers={}; // quiz answers by index
+
+function render(){
+ document.documentElement.lang=L?"es":"en";
+ $("lang").textContent=L?"ENGLISH":"ESPAÑOL";
+ document.querySelectorAll("[data-t]").forEach(el=>el.textContent=T[el.dataset.t][L]);
+ const bi=(a,i)=>a[L]; // pick language from a [en,es] pair
+ $("types").innerHTML=TYPES.map(t=>card(t[L],t[2+L])).join("");
+ $("diff").innerHTML=DIFF.map(t=>card(t[L],t[2+L])).join("");
+ $("dims").innerHTML=DIMS.map(t=>card(t[L],t[2+L])).join("");
+ $("sits").innerHTML=SITS.map(t=>card(t[L],t[2+L])).join("");
+ $("pillars").innerHTML=PILLARS.map(t=>card(t[L],"")).join("").replace(/<p><\/p>/g,"");
+ $("tips").innerHTML=TIPS.map((t,i)=>card((i+1)+". "+t[L],t[2+L])).join("");
+ $("gloss").innerHTML=GLOSS.map(t=>`<article class="card"><h3>${t[L]} <small style="color:#4a5a6a;font-weight:400">— ${t[1-L]}</small></h3><p>${t[2+L]}</p></article>`).join("");
+ $("team").innerHTML=TEAM.map(n=>`<div class="card">${n}</div>`).join("");
+ $("reflist").innerHTML=REFS.map(r=>`<li>${r[0]}<em>${r[1]}</em>. <a href="${r[2]}" target="_blank" rel="noopener">${r[2]}</a></li>`).join("");
+ $("stats").innerHTML=STATS.map(s=>`<div class="stat"><h3>${s.h[L]}</h3><small>${T.pop[L]}: ${s.p[L]}</small>`+
+  s.r.map(r=>`<div class="row"><span class="l">${r[0]}</span><div class="track" role="img" aria-label="${r[1]}%"><div class="fill" data-w="${r[1]}"></div></div><b>${r[1]}%</b></div>`).join("")+
+  `<p style="margin:10px 0 4px">${s.n[L]}</p><a href="${s.u}" target="_blank" rel="noopener">${T.more[L]}: ${s.u.replace("https://","")}</a></div>`).join("");
+ grow();
+ renderQuiz();
+}
+/* Bars are drawn on a 0–100% scale so proportions are not distorted */
+function grow(){requestAnimationFrame(()=>setTimeout(()=>document.querySelectorAll(".fill").forEach(f=>f.style.width=f.dataset.w+"%"),60))}
+
+function renderQuiz(){
+ $("quiz").innerHTML=QUIZ.map((q,i)=>{
+  const a=answers[i], done=a!==undefined;
+  return `<div class="card" style="margin-bottom:16px"><h3>${i+1}. ${q.s[L]}</h3>`+
+   q.o.map((o,j)=>`<button class="opt${done&&j===q.b?" best":""}${done&&j===a?" pick":""}" ${done?"disabled":""} onclick="pick(${i},${j})">${o[L]}</button>`).join("")+
+   `<div class="fb" style="display:${done?"block":"none"}"><b>${done?(a===q.b?(L?"¡Buena elección! ":"Great choice! "):(L?"Otra opción ayuda más. ":"Another option helps more. ")):""}</b>${q.e[L]}</div></div>`;
+ }).join("");
+}
+function pick(i,j){answers[i]=j;renderQuiz()}
+
+$("lang").onclick=()=>{L=1-L;try{localStorage.setItem("lang",L?"es":"en")}catch(e){}render()};
+$("menuBtn").onclick=()=>{const n=$("nav"),o=n.classList.toggle("open");$("menuBtn").setAttribute("aria-expanded",o)};
+$("nav").onclick=e=>{if(e.target.tagName==="A")$("nav").classList.remove("open")};
+render();
+</script>
+</body>
+</html>
